@@ -6,24 +6,24 @@ import toast, { Toaster } from "react-hot-toast";
 const Contact = () => {
   const timelineItems = [
     {
-      title: "Understanding Your Vision",
+      title: "Explore Courses",
       description:
-        "Our team collaborates with you to understand your personal brand, goals, and audience.",
+        "We help you understand which program best fits your academic and career goals.",
     },
     {
-      title: "Initial Strategy Consultation",
+      title: "Initial Consultation",
       description:
-        "We schedule a call to discuss your brand identity and marketing objectives in detail.",
+        "A counselor connects with you to review your educational background and interests.",
     },
     {
-      title: "Customized Marketing Plan",
+      title: "Course Planning",
       description:
-        "Based on our consultation, we create a tailored marketing and branding plan designed to grow your influence.",
+        "We design a personalized learning path tailored to your selected course.",
     },
     {
-      title: "Execution and Growth",
+      title: "Enrollment Support",
       description:
-        "With your approval, our team executes the plan, managing campaigns and providing insights to ensure continuous growth.",
+        "From application to onboarding, we assist you at every step of your educational journey.",
     },
   ];
 
@@ -31,6 +31,7 @@ const Contact = () => {
     firstName: "",
     lastName: "",
     email: "",
+    course: "",
     message: "",
   });
 
@@ -43,44 +44,46 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .send(
-        "service_fze3fg5", // Replace with your service ID
-        "template_wsw0djh", // Replace with your template ID
+        "service_fze3fg5",
+        "template_wsw0djh",
         formData,
-        "solLaLeHMEEOFy-Pn" // Replace with your public key
+        "solLaLeHMEEOFy-Pn"
       )
       .then(
         (result) => {
           console.log("Email successfully sent:", result.text);
-          toast.success("Message sent successfully!");
-          setFormData({ firstName: "", lastName: "", email: "", message: "" });
+          toast.success("Inquiry submitted successfully!");
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            course: "",
+            message: "",
+          });
         },
         (error) => {
           console.error("Error sending email:", error.text);
-          toast.error("Failed to send the message. Please try again.");
+          toast.error("Failed to submit inquiry. Please try again.");
         }
       );
   };
 
   return (
-    <section
-      className="px-4 py-6 my-4 md:px-16 md:py-12 md:my-8"
-      id="contact-us"
-    >
+    <section className="px-4 py-6 my-4 md:px-16 md:py-12 md:my-8" id="contact-us">
       <Toaster />
 
       <div className="text-center py-6 mb-6">
-        <h1 className="text-4xl font-bold">
-          Get a Tailored Plan for Your Brand's Growth
-        </h1>
+        <h1 className="text-4xl font-bold">Start Your Educational Journey</h1>
         <p className="text-lg font-sans">
-          Risk-free, Trusted Marketing and Branding Services for Influencers and
-          Creators
+          Personalized course guidance and admission support for students
         </p>
       </div>
+
       <div className="flex flex-col gap-16 md:flex-row">
+        {/* Timeline */}
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-6">
-            What Happens When You Collaborate With Us?
+            How We Guide You Through the Process
           </h2>
           <div className="relative space-y-12 pl-8">
             <div className="absolute top-2 left-4 w-[2px] h-full bg-white"></div>
@@ -95,12 +98,14 @@ const Contact = () => {
             ))}
           </div>
         </div>
+
+        {/* Contact Form */}
         <div className="md:w-1/2 text-black p-6 flex flex-col rounded-lg">
           <div className="text-3xl flex justify-center items-center my-4 rounded-full bg-black p-2 w-[70px] h-[70px] mx-auto">
             <FaPaperPlane className="text-white" />
           </div>
           <h3 className="text-2xl text-white font-bold mb-6 text-center">
-            Send us a message
+            Send Us an Inquiry
           </h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex gap-4">
@@ -121,6 +126,7 @@ const Contact = () => {
                 className="w-1/2 p-2 border text-black rounded-md focus:outline-none"
               />
             </div>
+
             <input
               value={formData.email}
               onChange={handleChange}
@@ -129,13 +135,32 @@ const Contact = () => {
               placeholder="Email*"
               className="w-full p-2 border text-black rounded-md focus:outline-none"
             />
+
+            <select
+              name="course"
+              value={formData.course}
+              onChange={handleChange}
+              className="w-full p-2 border text-black hover:text-black rounded-md focus:outline-none"
+              required
+            >
+              <option value="" disabled>
+                Select a Course*
+              </option>
+              <option value="web-development">Web Development</option>
+              <option value="graphic-design">Graphic Design</option>
+              <option value="digital-marketing">Digital Marketing</option>
+              <option value="data-science">Data Science</option>
+              <option value="business-management">Business Management</option>
+            </select>
+
             <textarea
               value={formData.message}
               onChange={handleChange}
               name="message"
-              placeholder="Briefly describe your project requirements or objective of the discussion"
+              placeholder="Tell us why you're interested in this course or ask any questions"
               className="w-full p-2 text-black border rounded-md h-32 focus:outline-none"
             ></textarea>
+
             <button
               type="submit"
               className="relative p-[2px] rounded-md"

@@ -15,21 +15,20 @@ const Videos = () => {
                 alt=""
               />
               <p className="text-[#aca0cf] text-sm sm:text-lg text-center lg:text-left">
-                Sociallywiredinc is a group of dedicated and innovative social
-                media management experts that works with various content
-                creators to help them raise the scope and reach of their
-                platforms through curated, engaging content and optimized media
-                marketing strategies. We owe our success to our ability to use
-                ever-evolving approaches to create personalized game plans for
-                each client and their target demographic.
+                Laureate Academy is a passionate team of educators and advisors
+              dedicated to empowering students and professionals with
+              personalized learning experiences. From skill-based courses to
+              academic guidance, we focus on real outcomes through modern
+              teaching methods, flexible learning, and continuous mentorship.
               </p>
             </div>
           </div>
           {/* Middle Section */}
           <div className="lg:w-1/2 p-10">
             <h1 className="text-[#f3efff] text-3xl sm:text-5xl lg:text-[7rem] font-bold text-center px-4">
-              Amplify Optimize Monetize Your Social <br />
-               Platforms
+             Learn. <br />
+            Grow. <br />
+            Succeed with Laureate.
             </h1>
           </div>
           {/* Right Section */}
@@ -40,7 +39,7 @@ const Videos = () => {
                   500+
                 </h1>
                 <h1 className="text-sm sm:text-base font-base text-[#aca0cf]">
-                  Successful events planned
+                  Students Successfully Guided
                 </h1>
               </div>
               <img

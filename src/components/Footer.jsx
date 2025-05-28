@@ -9,13 +9,13 @@ const SocialMediaLinks = () => (
     style={{
       boxShadow: "inset 0 -270px 180px #1a1a19, inset 0 300px 130px #1a1a19",
       background:
-        "url('https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/66a8b3a0d42be9aa880c1dbc_footer-01.jpg')",
+        "url('https://png.pngtree.com/thumb_back/fh260/background/20230703/pngtree-d-rendered-image-of-black-mortarboard-hat-resting-on-opened-book-image_3737422.jpg')",
     }}
   >
     {/* Top Social Links */}
     <div className="flex flex-wrap gap-4 sm:gap-0 sm:flex-nowrap items-center justify-between border-b-2 pb-8">
       <a
-        href="https://www.instagram.com/sociallywiredinc/profilecard/?igsh=MTNnMnFzdWx1YW5pZQ%3D%3D"
+        href="https://www.instagram.com//profilecard/?igsh=MTNnMnFzdWx1YW5pZQ%3D%3D"
         target="_blank"
         className="flex text-lg sm:text-2xl items-center gap-2"
       >
@@ -28,7 +28,7 @@ const SocialMediaLinks = () => (
       </a>
       <a
         target="_blank"
-        href="https://www.facebook.com/people/Socially-wired-Inc/61565652324656/?mibextid=LQQJ4d&rdid=FQoeOoh5RUUpgRxQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCh4GsGhjoMJXrrVo%2F%3Fmibextid%3DLQQJ4d"
+        href="https://www.facebook.com/people/61565652324656/?mibextid=LQQJ4d&rdid=FQoeOoh5RUUpgRxQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCh4GsGhjoMJXrrVo%2F%3Fmibextid%3DLQQJ4d"
         className="flex text-lg sm:text-2xl items-center gap-2"
       >
         <img
@@ -39,7 +39,7 @@ const SocialMediaLinks = () => (
         Facebook
       </a>
       <a
-        href="https://www.linkedin.com/company/socially-wired-inc/"
+        href="https://www.linkedin.com/company/"
         className="flex text-lg sm:text-2xl items-center gap-2"
         target="_blank"
       >
@@ -84,17 +84,17 @@ const SocialMediaLinks = () => (
         <ul className="space-y-2">
           <li>
             <a href="#privacy" className="text-base sm:text-lg">
-              Toronto, Ontario Canada
+              UK, Ontario Canada
             </a>
           </li>
           <li>
             <a href="#terms" className="text-base sm:text-lg">
-              +1 (519) 697-8425{" "}
+              +1 (111) 111-1111{" "}
             </a>
           </li>
           <li>
             <a href="#terms" className="text-base sm:text-lg">
-              support@sociallywiredinc.com{" "}
+              support@abc.com{" "}
             </a>
           </li>
           <li>

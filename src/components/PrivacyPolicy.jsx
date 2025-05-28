@@ -9,10 +9,10 @@ const PrivacyPolicy = () => {
         Welcome to our Privacy Policy! This document elucidates how your
         personal information is collected, utilized, and shared when you visit{" "}
         <a
-          href="https://sociallywiredinc.com"
+          href="https://.com"
           className="underline hover:text-blue-800"
         >
-          https://sociallywiredinc.com
+          https://avc.com
         </a>{" "}
         (the “Site”). Here, we detail the types of personal information we
         gather, how we leverage this information to enhance your experience on
@@ -95,10 +95,10 @@ const PrivacyPolicy = () => {
         or if you would like to make a complaint, please reach out to us via
         email at{" "}
         <a
-          href="mailto:support@sociallywiredinc.com"
+          href="mailto:support@.com"
           className="underline hover:text-blue-800"
         >
-          support@sociallywiredinc.com
+          support@.com
         </a>
       </p>
     </div>

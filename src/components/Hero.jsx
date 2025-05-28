@@ -15,7 +15,7 @@ const Hero = () => {
             "inset 0 -100px 180px #1a1a19, inset 0 300px 130px #1a1a19",
 
           backgroundImage:
-            "url('https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/669770eddbcf5f504ef99354_hero-01.jpg')",
+            "url('https://png.pngtree.com/thumb_back/fh260/background/20230703/pngtree-d-rendered-image-of-black-mortarboard-hat-resting-on-opened-book-image_3737422.jpg')",
         }}
       ></div>
 
@@ -27,7 +27,7 @@ const Hero = () => {
             Optimize and monetize social media marketing
           </div>
           <div className="text-sm sm:text-base lg:text-md sm:text-center lg:text-left">
-            Sociallywiredinc boosts creators' reach with curated content and
+            edua boosts creators' reach with curated content and
             tailored social media strategies for targeted audience growth.
           </div>
         </div>
@@ -39,7 +39,7 @@ const Hero = () => {
               "linear-gradient(160deg, #C98D38, #994E1B 22%, #fff694 52%, #2E3832 83%)",
           }}
         >
-          SociallyWired
+          Education
         </div>
         <div className="flex justify-center items-center ">
           {/* <button
