@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import logo from "../assets/logo/512x512.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -79,7 +78,7 @@ const Navbar = () => {
             className="flex cursor-pointer  title-font font-medium items-center text-gray-900 "
           >
             <span className="w-16 rounded-full">
-              <img src={logo} alt="" />{" "}
+              <img src="https://laureate.org.uk/public/uploads/main/files/09-04-2025/litalogo.png.webp" alt="" />{" "}
             </span>
           </a>
         </div>
@@ -103,7 +102,7 @@ const Navbar = () => {
           </a>
           <div
             onClick={handleClick}
-            className="bg-[#7959DA] p-4 rounded-full cursor-pointer hover:bg-[#ACA0CF]"
+            className="bg-[#AE6A28] p-4 rounded-full cursor-pointer hover:bg-[#ACA0CF]"
           >
             <GiHamburgerMenu />
           </div>
@@ -111,7 +110,7 @@ const Navbar = () => {
         {menu && (
           <div
             ref={dropdownRef}
-            className="absolute w-[300px] top-[6rem] right-10 bg-[#362C52] border border-[#7959DA] rounded-2xl p-4 z-50"
+            className="absolute w-[300px] top-[6rem] right-10 bg-[#c98d38] border border-[#AE6A28] rounded-2xl p-4 z-50"
           >
             <ul className="cursor-pointer flex flex-col">
               <a href="#services" onClick={handleItemClick} className="mb-2">

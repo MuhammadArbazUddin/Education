@@ -1,9 +1,6 @@
-import CardVerticalSlider from "./components/CardVerticalSlider";
-import ContactForm from "./components/ContactForm";
-import CreativeWorks from "./components/CreativeWorks";
-import Footer from "./components/Footer";
+// import ContactForm from "./components/ContactForm";
 import Hero from "./components/Hero";
-import InfiniteSlider from "./components/InfiniteSlider";
+import ScrollPopup from "./components/ScrollPopup";
 import Videos from "./components/Videos";
 import WorkProcess from "./components/WorkProcess";
 
@@ -13,11 +10,9 @@ export default function Home() {
       <div>
         <Hero />
         <WorkProcess />
-        {/* <InfiniteSlider /> */}
         <Videos />
-        {/* <CreativeWorks /> */}
-        {/* <CardVerticalSlider /> */}
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <ScrollPopup />
       </div>
     </>
   );

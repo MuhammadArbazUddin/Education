@@ -42,30 +42,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .send(
-        "service_fze3fg5",
-        "template_wsw0djh",
-        formData,
-        "solLaLeHMEEOFy-Pn"
-      )
-      .then(
-        (result) => {
-          console.log("Email successfully sent:", result.text);
-          toast.success("Inquiry submitted successfully!");
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            course: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.error("Error sending email:", error.text);
-          toast.error("Failed to submit inquiry. Please try again.");
-        }
-      );
+    // emailjs
+    //   .send(
+    //     "service_fze3fg5",
+    //     "template_wsw0djh",
+    //     formData,
+    //     "solLaLeHMEEOFy-Pn"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log("Email successfully sent:", result.text);
+    //       toast.success("Inquiry submitted successfully!");
+    //       setFormData({
+    //         firstName: "",
+    //         lastName: "",
+    //         email: "",
+    //         course: "",
+    //         message: "",
+    //       });
+    //     },
+    //     (error) => {
+    //       console.error("Error sending email:", error.text);
+    //       toast.error("Failed to submit inquiry. Please try again.");
+    //     }
+    //   );
   };
 
   return (
